@@ -1,0 +1,41 @@
+
+<br>
+<div style="align-self: center">
+  <div class="add" ><h3>{{name}}</h3></div>
+
+</div>  <br>
+    <div class="row">
+            <div class="column box" *ngFor="let item of list">
+
+        <div class='wrapper' style="text-align: center">
+        <h3 class="header">{{item.name}}</h3><hr>
+          <input type="text" placeholder="Your name.." (keyup.enter)="createElement(item)" [(ngModel)]="item.temp" >
+        <br><br>
+      <div class='container' [dragula]='"another-bag"' [dragulaModel]='text'>
+          <div class="element" *ngFor='let text of item.element; let idx = index' (click)="check(item,idx)" id="{{text}}">
+         {{text}}
+          </div> 
+      </div>
+    </div>
+  </div>
+
+    <div class="column zoom" >
+        <div *ngIf="addVar" (click)=add()>
+          <br>
+            <h3 >Add a list...</h3>    
+          </div>
+          <div *ngIf="!addVar">
+            <br>
+            <div class="imgChara">
+                <img src="../assets/img/cancel.svg" class="imgChar" (click)=add()> 
+            </div>
+              <input type="text" placeholder="Your name.."  [(ngModel)] ="tempName" (keyup.enter)="createList()">
+          </div>
+    </div>
+    
+    
+    
+    </div>
+
+  <br><br>
+

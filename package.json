@@ -1,5 +1,5 @@
 {
-  "name": "sample-app",
+  "name": "test-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -20,12 +20,19 @@
     "@angular/platform-browser": "^6.0.2",
     "@angular/platform-browser-dynamic": "^6.0.2",
     "@angular/router": "^6.0.2",
+    "angular-drag-and-drop-lists": "^2.1.0",
+    "angular-drag-drop": "^3.2.0",
+    "angular-local-storage": "^0.7.1",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "mongodb": "^3.1.0-beta4",
-    "rxjs": "^6.0.0",
+    "ng2-dnd": "^5.0.2",
+    "ng2-dragula": "^1.5.0",
+    "rxjs": "^6.2.0",
+    "rxjs-compat": "^6.2.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
